@@ -57,3 +57,127 @@ FROM dbo.customers
 GROUP BY customer_city
 HAVING COUNT(customer_id) > 1000
 ORDER BY Total_Customers DESC;
+
+
+*
+====================================================
+Business Question 3
+====================================================
+
+Question:
+How many unique cities do we have customers in?
+
+Business Objective:
+Determine the geographical reach of the customer base.
+
+Business Insight:
+Counts the number of distinct cities where customers
+are located.
+
+Skills Demonstrated:
+- COUNT()
+- DISTINCT
+*/
+
+SELECT COUNT(DISTINCT customer_city) AS Unique_Cities
+FROM dbo.customers;
+
+/*
+====================================================
+Business Question 4
+====================================================
+
+Question:
+How many customers are located in the state of RJ?
+
+Business Objective:
+Determine the size of the customer base in the state
+of Rio de Janeiro.
+
+Business Insight:
+The result shows the number of customers in RJ,
+helping the business understand regional customer
+distribution.
+
+Skills Demonstrated:
+- SELECT
+- FROM
+- WHERE
+- COUNT()
+- Alias (AS)
+*/
+
+SELECT COUNT(customer_id) AS Total_Customers
+FROM dbo.customers
+WHERE customer_state = 'RJ';
+
+
+/*
+====================================================
+Business Question 5
+====================================================
+
+Question:
+Show all customers who live in SP or RJ.
+
+Business Objective:
+Retrieve customers from two key states.
+
+Business Insight:
+Useful for targeted marketing campaigns or regional
+customer analysis.
+*/
+
+SELECT
+    customer_id,
+    customer_city,
+    customer_state
+FROM dbo.customers
+WHERE customer_state IN ('SP', 'RJ');
+
+
+/*
+====================================================
+Business Question 6
+====================================================
+
+Question:
+Show all customers whose city starts with 'S'.
+
+Business Objective:
+Demonstrate pattern matching using the LIKE operator.
+
+Business Insight:
+Useful for searching customer records by city name.
+*/
+
+SELECT
+    customer_id,
+    customer_city,
+    customer_state
+FROM dbo.customers
+WHERE customer_city LIKE 'S%';
+
+
+/*
+====================================================
+Business Question 7
+====================================================
+
+Question:
+Show all customers whose city contains 'rio'.
+
+Business Objective:
+Find customers living in cities whose names contain
+the text 'rio'.
+
+Business Insight:
+Demonstrates searching for partial text using wildcards.
+*/
+
+SELECT
+    customer_id,
+    customer_city,
+    customer_state
+FROM dbo.customers
+WHERE customer_city LIKE '%rio%';
