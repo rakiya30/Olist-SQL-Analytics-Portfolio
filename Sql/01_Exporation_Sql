@@ -1,0 +1,59 @@
+/*
+===========================================================
+PROJECT: Olist E-commerce SQL Analytics Portfolio
+FILE: 01_Exploration.sql
+AUTHOR: Rakiya Omeiza
+===========================================================
+
+PURPOSE
+-------
+This script explores the customers table and answers basic
+business questions using SQL.
+
+===========================================================
+*/
+
+------------------------------------------------------------
+-- Business Question 1
+-- Which states have the most customers?
+------------------------------------------------------------
+
+SELECT
+    customer_state,
+    COUNT(customer_id) AS Total_Customers
+FROM dbo.customers
+GROUP BY customer_state
+ORDER BY Total_Customers DESC;
+
+
+
+/*
+====================================================
+Business Question 2
+====================================================
+
+Question:
+Which cities have more than 1,000 customers?
+
+Business Objective:
+Identify cities with a high concentration of customers.
+
+Business Insight:
+These cities may represent key markets for marketing
+campaigns, logistics planning and warehouse expansion.
+
+Skills Demonstrated:
+- SELECT
+- COUNT()
+- GROUP BY
+- HAVING
+- ORDER BY
+*/
+
+SELECT
+    customer_city,
+    COUNT(customer_id) AS Total_Customers
+FROM dbo.customers
+GROUP BY customer_city
+HAVING COUNT(customer_id) > 1000
+ORDER BY Total_Customers DESC;
