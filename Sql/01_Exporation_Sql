@@ -181,3 +181,87 @@ SELECT
     customer_state
 FROM dbo.customers
 WHERE customer_city LIKE '%rio%';
+
+
+/*
+====================================================
+Business Request 8
+====================================================
+
+Business Question:
+Show all customers whose city ends with 'polis'.
+
+Business Objective:
+Identify customers who live in cities whose names end
+with 'polis'. This can support regional analysis and
+location-based marketing.
+
+Grain:
+One row represents one customer.
+
+Table(s):
+customers
+
+Columns Needed:
+- customer_id
+- customer_city
+- customer_state
+
+SQL Concepts:
+- SELECT
+- FROM
+- WHERE
+- LIKE
+
+Business Insight:
+The query identifies customers living in cities whose
+names end with 'polis'. This information can support
+regional customer analysis and targeted marketing.
+
+====================================================
+*/
+
+SELECT
+    customer_id,
+    customer_city,
+    customer_state
+FROM dbo.customers
+WHERE customer_city LIKE '%polis';
+
+/*
+====================================================
+Business Request 9
+====================================================
+
+Business Question:
+List the first 10 customers in the database.
+
+Business Objective:
+Preview the customer data and verify that the dataset
+has been imported correctly before further analysis.
+
+Grain:
+One row represents one customer.
+
+Table(s):
+customers
+
+Columns Needed:
+- All columns
+
+SQL Concepts:
+- SELECT
+- TOP
+- FROM
+
+Business Insight:
+The query returns the first 10 customer records,
+allowing analysts to inspect the dataset structure,
+verify available columns, and confirm the data was
+imported successfully.
+
+====================================================
+*/
+
+SELECT TOP 10 *
+FROM dbo.customers;
