@@ -265,3 +265,323 @@ imported successfully.
 
 SELECT TOP 10 *
 FROM dbo.customers;
+
+/*
+====================================================
+Business Request 10
+====================================================
+
+Business Question:
+List the first 5 customers from the state of SP.
+
+Business Objective:
+Preview customer records from the state of São Paulo.
+
+Grain:
+One row represents one customer.
+
+Table(s):
+customers
+
+Columns Needed:
+- All columns
+
+SQL Concepts:
+- SELECT
+- TOP
+- FROM
+- WHERE
+
+Business Insight:
+Returns a sample of customer records from SP for
+data exploration and validation.
+
+====================================================
+*/
+
+SELECT TOP 5 *
+FROM dbo.customers
+WHERE customer_state = 'SP';
+
+
+/*
+====================================================
+Business Request 11
+====================================================
+
+Business Question:
+List the first 20 customers from either SP or RJ.
+
+Business Objective:
+Preview customer records from the two largest customer
+states.
+
+Grain:
+One row represents one customer.
+
+Table(s):
+customers
+
+Columns Needed:
+- All columns
+
+SQL Concepts:
+- SELECT
+- TOP
+- FROM
+- WHERE
+- IN
+
+Business Insight:
+Provides a sample of customer records from SP and RJ
+to support exploratory analysis.
+
+====================================================
+*/
+
+SELECT TOP 20 *
+FROM dbo.customers
+WHERE customer_state IN ('SP', 'RJ');
+
+
+
+/*
+====================================================
+Business Request 12
+====================================================
+
+Business Question:
+Show all customers whose city starts with the letter 'A'.
+
+Business Objective:
+Demonstrate filtering using pattern matching.
+
+Grain:
+One row represents one customer.
+
+Table(s):
+customers
+
+Columns Needed:
+- All columns
+
+SQL Concepts:
+- SELECT
+- FROM
+- WHERE
+- LIKE
+
+Business Insight:
+Identifies customers living in cities beginning with
+the letter 'A'.
+
+====================================================
+*/
+
+SELECT *
+FROM dbo.customers
+WHERE customer_city LIKE 'A%';
+
+
+/*
+====================================================
+Business Request 13
+====================================================
+
+Business Question:
+Show all customers whose city ends with 'landia'.
+
+Business Objective:
+Demonstrate filtering using pattern matching.
+
+Grain:
+One row represents one customer.
+
+Table(s):
+customers
+
+Columns Needed:
+- All columns
+
+SQL Concepts:
+- SELECT
+- FROM
+- WHERE
+- LIKE
+
+Business Insight:
+Identifies customers living in cities whose names end
+with 'landia'.
+
+====================================================
+*/
+
+SELECT *
+FROM dbo.customers
+WHERE customer_city LIKE '%landia';
+
+
+
+/*
+====================================================
+Business Request 14
+====================================================
+
+Business Question:
+Show all customers whose city contains 'pa'.
+
+Business Objective:
+Demonstrate filtering using partial text matching.
+
+Grain:
+One row represents one customer.
+
+Table(s):
+customers
+
+Columns Needed:
+- All columns
+
+SQL Concepts:
+- SELECT
+- FROM
+- WHERE
+- LIKE
+
+Business Insight:
+Identifies customers living in cities containing
+'pa' within the city name.
+
+====================================================
+*/
+
+SELECT *
+FROM dbo.customers
+WHERE customer_city LIKE '%pa%';
+
+
+
+
+/*
+====================================================
+Business Request 15
+====================================================
+
+Business Question:
+List all customers ordered alphabetically by city.
+
+Business Objective:
+Organise customer records alphabetically by city.
+
+Grain:
+One row represents one customer.
+
+Table(s):
+customers
+
+Columns Needed:
+- All columns
+
+SQL Concepts:
+- SELECT
+- FROM
+- ORDER BY
+
+Business Insight:
+Displays customer records in ascending alphabetical
+order by city.
+
+====================================================
+*/
+
+SELECT *
+FROM dbo.customers
+ORDER BY customer_city ASC;
+
+
+
+
+/*
+====================================================
+Business Request 16
+====================================================
+
+Business Question:
+List all customers ordered from Z to A by city.
+
+Business Objective:
+Organise customer records in reverse alphabetical
+order by city.
+
+Grain:
+One row represents one customer.
+
+Table(s):
+customers
+
+Columns Needed:
+- All columns
+
+SQL Concepts:
+- SELECT
+- FROM
+- ORDER BY
+
+Business Insight:
+Displays customer records in descending alphabetical
+order by city.
+
+====================================================
+*/
+
+SELECT *
+FROM dbo.customers
+ORDER BY customer_city DESC;
+
+
+
+/*
+====================================================
+Business Request 17
+====================================================
+
+Business Question:
+List all customers ordered alphabetically by state,
+then city.
+
+Business Objective:
+Organise customer records first by state and then by
+city.
+
+Grain:
+One row represents one customer.
+
+Table(s):
+customers
+
+Columns Needed:
+- All columns
+
+SQL Concepts:
+- SELECT
+- FROM
+- ORDER BY
+
+Business Insight:
+Displays customer records grouped alphabetically by
+state and city for easier regional analysis.
+
+====================================================
+*/
+
+SELECT *
+FROM dbo.customers
+ORDER BY customer_state ASC,
+         customer_city ASC;
+
+
+
+
+
+
+
