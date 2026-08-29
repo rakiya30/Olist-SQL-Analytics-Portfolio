@@ -73,7 +73,7 @@ ORDER BY customer_id;
 /*
 ----------------------------------------------------
 4. Rank customers using DENSE_RANK
-----------------------------------------------------
+3
 */
 
 SELECT customer_id,
