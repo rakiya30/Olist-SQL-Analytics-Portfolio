@@ -117,13 +117,10 @@ The core Olist e-commerce tables have been imported and analysed using SQL Serve
 
 ## 🚀 Next Steps
 
-- Import remaining tables
-- Learn SQL JOINs
-- Customer order analysis
-- Revenue analysis
-- Delivery performance analysis
-- Customer segmentation
-- Build Power BI dashboard
+- Build additional SQL analysis projects
+- Explore more advanced SQL techniques
+- Develop more advanced Power BI dashboards
+- Continue expanding my data analytics portfolio
 
 ## 📊 Power BI Dashboard
 
