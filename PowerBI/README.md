@@ -34,6 +34,9 @@ The dashboard includes:
 - Customer State Distribution
 - Key performance indicator cards
 
+<img width="1387" height="722" alt="dashboard" src="https://github.com/user-attachments/assets/093560bc-6843-400f-a3c0-e99c647d7329" />
+
+
 ## Key Business Questions
 
 The dashboard was designed to explore:
@@ -58,10 +61,5 @@ PowerBI/
 ├── Dashboard/
 └── Screenshots/
 
-
-
-## Dashboard Preview
-
-<img width="1387" height="722" alt="dashboard" src="https://github.com/user-attachments/assets/093560bc-6843-400f-a3c0-e99c647d7329" />
 
 
