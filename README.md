@@ -126,3 +126,9 @@ Remaining tables will be imported as the project progresses.
 - Customer segmentation
 - Build Power BI dashboard
 
+## 📊 Power BI Dashboard
+
+[View the Power BI Dashboard](PowerBI/README.md)
+
+![Olist E-Commerce Power BI Dashboard](PowerBI/dashboard.png)
+
