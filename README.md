@@ -61,7 +61,6 @@ The core Olist e-commerce tables have been imported and analysed using SQL Serve
 
 ---
 
-# SQL Skills Demonstrated
 
  # SQL Skills Demonstrated
 
