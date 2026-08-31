@@ -57,35 +57,34 @@ Current tables imported:
 - ✅ orders
 - ✅ geolocation
 
-Remaining tables will be imported as the project progresses.
+The core Olist e-commerce tables have been imported and analysed using SQL Server.
 
 ---
 
 # SQL Skills Demonstrated
 
-✅ SELECT
+ # SQL Skills Demonstrated
 
-✅ FROM
-
-✅ WHERE
-
-✅ COUNT()
-
-✅ DISTINCT
-
-✅ GROUP BY
-
-✅ HAVING
-
-✅ ORDER BY
-
-✅ LIKE
-
-✅ IN
-
+- ✅ SELECT
+- ✅ FROM
+- ✅ WHERE
+- ✅ COUNT()
+- ✅ AVG()
+- ✅ DISTINCT
+- ✅ GROUP BY
+- ✅ HAVING
+- ✅ ORDER BY
+- ✅ LIKE
+- ✅ IN
+- ✅ CASE statements
+- ✅ JOINs
+- ✅ Common Table Expressions (CTEs)
+- ✅ Window Functions
+- ✅ Business Analysis
+- ✅ Views
 ---
 
-# Business Questions Solved
+# Some of the Business Questions Solved
 
 - Which states have the most customers?
 - Which cities have more than 1,000 customers?
@@ -112,7 +111,8 @@ Remaining tables will be imported as the project progresses.
 - ✅ SQL Server database created
 - ✅ Initial data imported
 - ✅ Customer exploration completed
-- ✅ SQL portfolio started
+- ✅ SQL portfolio completed
+- ✅ power BI dashboard completed
 
 ---
 
