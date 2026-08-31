@@ -62,4 +62,7 @@ PowerBI/
 
 ## Dashboard Preview
 
-![Olist E-Commerce Power BI Dashboard](dashboard.png)
+<img width="1387" height="722" alt="dashboard" src="https://github.com/user-attachments/assets/c3f1d445-01cf-4b00-9bef-36436e2de95e" />
+
+
+
