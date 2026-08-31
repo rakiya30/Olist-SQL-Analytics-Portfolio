@@ -65,23 +65,23 @@ The core Olist e-commerce tables have been imported and analysed using SQL Serve
 
  # SQL Skills Demonstrated
 
-- ✅ SELECT
-- ✅ FROM
-- ✅ WHERE
-- ✅ COUNT()
-- ✅ AVG()
-- ✅ DISTINCT
-- ✅ GROUP BY
-- ✅ HAVING
-- ✅ ORDER BY
-- ✅ LIKE
-- ✅ IN
-- ✅ CASE statements
-- ✅ JOINs
-- ✅ Common Table Expressions (CTEs)
-- ✅ Window Functions
-- ✅ Business Analysis
-- ✅ Views
+✅ SELECT
+✅ FROM
+✅ WHERE
+✅ COUNT()
+✅ AVG()
+✅ DISTINCT
+✅ GROUP BY
+✅ HAVING
+✅ ORDER BY
+✅ LIKE
+✅ IN
+✅ CASE statements
+✅ JOINs
+✅ Common Table Expressions (CTEs)
+✅ Window Functions
+✅ Business Analysis
+✅ Views
 ---
 
 # Some of the Business Questions Solved
