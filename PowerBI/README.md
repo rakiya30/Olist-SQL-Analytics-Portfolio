@@ -57,3 +57,9 @@ PowerBI/
 ├── README.md
 ├── Dashboard/
 └── Screenshots/
+
+
+
+## Dashboard Preview
+
+![Olist E-Commerce Power BI Dashboard](dashboard.png)
