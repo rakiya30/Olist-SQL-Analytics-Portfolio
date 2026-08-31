@@ -62,7 +62,6 @@ PowerBI/
 
 ## Dashboard Preview
 
-<img width="1387" height="722" alt="dashboard" src="https://github.com/user-attachments/assets/c3f1d445-01cf-4b00-9bef-36436e2de95e" />
-
+<img width="1387" height="722" alt="dashboard" src="https://github.com/user-attachments/assets/093560bc-6843-400f-a3c0-e99c647d7329" />
 
 
