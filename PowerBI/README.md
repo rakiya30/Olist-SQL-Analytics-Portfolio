@@ -12,6 +12,9 @@ The dashboard transforms the cleaned and analysed data into clear business insig
 - SQL Server
 - DAX
 - Power Query
+- Data Visualisation
+- Data Analysis
+- Business Intelligence
 
 ## Dashboard Overview
 
